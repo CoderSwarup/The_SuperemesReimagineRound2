@@ -132,7 +132,7 @@ export default function OurFeatures() {
         <div className="background-circle"></div>
       </div>
       <div className="features-left-part">
-        <h1>Why Choose Us?</h1>
+        <h1 className="cursor-scale">Why Choose Us?</h1>
         <div className="line">
           <div className="icon-container">
             <img src="./Assets/Images/Can.webp" alt="" width="100px" />
@@ -140,62 +140,62 @@ export default function OurFeatures() {
         </div>
       </div>
       <div className="features-right-part">
-        <div class="feature-content feature-one">
+        <div className="feature-content feature-one">
           <span></span>
-          <div class="content">
-            <h2>Hight Quality</h2>
+          <div className="content">
+            <h2 className="cursor-scale">Hight Quality</h2>
             <p>
               Nam Viet continuously develops new drinks which bring original
               natural tastes, high nutrition facts, catch the newest trends in
               the market.
             </p>
             <button className="F-BTN">
-              <div class="text">READ MORE</div>
-              <div class="wave"></div>
+              <div className="text">READ MORE</div>
+              <div className="wave"></div>
             </button>
           </div>
         </div>
         <div className="feature-content feature-two">
           <span></span>
-          <div class="content">
-            <h1>Fast Delivery</h1>
+          <div className="content">
+            <h1 className="cursor-scale">Fast Delivery</h1>
             <p>
               Nam Viet also provides convenient logistic service to all ports in
               the world via air or sea shipments.
             </p>{" "}
             <button className="F-BTN">
-              <div class="text">READ MORE</div>
-              <div class="wave"></div>
+              <div className="text">READ MORE</div>
+              <div className="wave"></div>
             </button>
           </div>
         </div>
         <div className="feature-content feature-three">
           <span></span>
-          <div class="content">
-            <h1>Flexible Packaging</h1>
+          <div className="content">
+            <h1 className="cursor-scale">Flexible Packaging</h1>
             <p>
               Production runs in accordance with world highest standards of Food
               Safety. Big variety of soft drinks, non-alcohol drinks, fruit
               juice drinks.
             </p>{" "}
             <button className="F-BTN">
-              <div class="text">READ MORE</div>
-              <div class="wave"></div>
+              <div className="text">READ MORE</div>
+              <div className="wave"></div>
             </button>
           </div>
         </div>
         <div className="feature-content feature-four">
           {" "}
           <span></span>
-          <div class="content">
-            <h1>Free Design Label</h1>
+          <div className="content">
+            <h1 className="cursor-scale">Free Design Label</h1>
             <p>
               Customizable labels and designs. We also make the free sample for
               clients.
             </p>{" "}
             <button className="F-BTN">
-              <div class="text">READ MORE</div>
-              <div class="wave"></div>
+              <div className="text">READ MORE</div>
+              <div className="wave"></div>
             </button>
           </div>
         </div>

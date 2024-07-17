@@ -180,10 +180,10 @@ export default function OurPartners() {
           </div>
         </div>
         <div className="overlay-div">
-          <h1>
+          <h1 className="cursor-scale">
             Our <span>Partners</span>
           </h1>
-          <div className="scroll-down">
+          <div className="scroll-down cursor-scale">
             <h3>SCROLL DOWN</h3>
             <div className="scroll-p">
               <div className="scrolling"></div>

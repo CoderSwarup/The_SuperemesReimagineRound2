@@ -62,8 +62,12 @@ export default function SuperProduct() {
   return (
     <div id="Super-Product">
       <div className="our-super-product-txt">
-        <h1 id="SP-text1">Exploring New</h1>
-        <h1 id="SP-text2">Super Product</h1>
+        <h1 id="SP-text1" className="cursor-scale">
+          Exploring New
+        </h1>
+        <h1 id="SP-text2" className="cursor-scale">
+          Super Product
+        </h1>
       </div>
       <div className="our-super-product-txt-div">
         <div className="scroll-super-product">
