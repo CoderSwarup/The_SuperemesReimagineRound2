@@ -44,8 +44,8 @@
   font-size: 12rem;
   color: #eee;
   font-weight: bold;
-  font-family: system-ui;
-  text-transform: uppercase;
+  font-family: wush;
+  text-transform: lowercase;
   white-space: nowrap;
 }
 .item.active {
@@ -141,8 +141,9 @@
   transform: translate(-50%, -50%);
   height: var(--height-mockup);
   width: var(--width-mockup);
+
   background: url(./Assets/Images/BestSellersImg/mockup.png) 0 0 no-repeat,
-    url(./Assets/Images/BestSellersImg/listSoda.jpg) var(--left) 0;
+    url(./Assets/Images/BestSellersImg/listSoda.png) var(--left) 0;
   background-size: auto 100%;
   background-blend-mode: multiply;
   -webkit-mask-image: url(./Assets/Images/BestSellersImg/mockup.png);

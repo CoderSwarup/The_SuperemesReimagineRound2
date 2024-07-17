@@ -132,7 +132,7 @@ export default function OurFeatures() {
         <div className="background-circle"></div>
       </div>
       <div className="features-left-part">
-        <h1 className="cursor-scale">Why Choose Us?</h1>
+        <h1 className="cursor-scale">why choose us?</h1>
         <div className="line">
           <div className="icon-container">
             <img src="./Assets/Images/Can.webp" alt="" width="100px" />

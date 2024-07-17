@@ -63,10 +63,10 @@ export default function SuperProduct() {
     <div id="Super-Product">
       <div className="our-super-product-txt">
         <h1 id="SP-text1" className="cursor-scale">
-          Exploring New
+          exploring new
         </h1>
         <h1 id="SP-text2" className="cursor-scale">
-          Super Product
+          super product
         </h1>
       </div>
       <div className="our-super-product-txt-div">

@@ -73,7 +73,7 @@ export default function BestSellers() {
       <div className="carousel" ref={carouselRef}>
         <div className="list" ref={listRef}>
           <div className="item active" style={{ "--background": "#ea3d41" }}>
-            <div className="content cursor-scale">Strawberry</div>
+            <div className="content cursor-scale">strawberry</div>
             <img
               src="./Assets/Images/BestSellersImg/fruit_strawberry.png"
               className="fruit"

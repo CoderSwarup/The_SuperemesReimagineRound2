@@ -52,7 +52,7 @@ body::-webkit-scrollbar {
   margin-left: -20px;
   margin-top: -20px;
   border-radius: 50%;
-  border: 2px solid #16a085;
+  border: 2px solid #ffffff;
   transition: transform 0.3s ease;
   transform-origin: center center;
   pointer-events: none;
@@ -68,4 +68,7 @@ body::-webkit-scrollbar {
 }
 .grow-small {
   transform: scale(2.5);
+}
+.grow-small-2 {
+  transform: scale(10);
 }

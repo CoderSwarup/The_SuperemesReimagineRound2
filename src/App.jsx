@@ -7,6 +7,7 @@ import SuperProduct from "./Components/SuperProduct/SuperProduct";
 import OurPartners from "./Components/OurPartners/OurPartners";
 import OurFeatures from "./Components/OurFeatures/OurFeatures";
 import BestSellers from "./Components/BestSellers/BestSellers";
+import Footer from "./Components/Footer/Footer";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -21,6 +22,9 @@ function App() {
     () => {
       const cursor = document.querySelector(".cursor");
       const cursorScale = document.querySelectorAll(".cursor-scale");
+      const cursorScalelarger = document.querySelectorAll(
+        ".cursor-scale-larger"
+      );
 
       gsap.to({}, 0.016, {
         repeat: -1,
@@ -45,6 +49,17 @@ function App() {
             cursor.classList.remove("grow");
             cursor.classList.add("grow-small");
           }
+        });
+      });
+      cursorScalelarger.forEach((link) => {
+        link.addEventListener("mouseleave", () => {
+          cursor.classList.remove("grow");
+          cursor.classList.remove("grow-small-2");
+        });
+        link.addEventListener("mousemove", () => {
+          cursor.classList.add("grow");
+
+          cursor.classList.add("grow-small-2");
         });
       });
 
@@ -78,6 +93,7 @@ function App() {
       <OurPartners />
       <OurFeatures />
       <SuperProduct />
+      <Footer></Footer>
     </div>
   );
 }

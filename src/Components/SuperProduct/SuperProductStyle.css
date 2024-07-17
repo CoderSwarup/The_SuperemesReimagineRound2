@@ -23,6 +23,7 @@
   transform: translate(-20%, -80%);
   color: #fff;
   font-size: 5vw;
+  font-family: wush;
 }
 
 #SP-text2 {
@@ -32,6 +33,7 @@
   transform: translate(20%, 80%);
   color: #fff;
   font-size: 5vw;
+  font-family: wush;
 }
 
 .our-super-product-txt-div {
