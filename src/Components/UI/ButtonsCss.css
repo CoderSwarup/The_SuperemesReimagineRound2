@@ -1,0 +1,218 @@
+/*=============== GOOGLE FONTS ===============*/
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap");
+
+/*=============== VARIABLES CSS ===============*/
+:root {
+  /*========== Colors ==========*/
+  /*Color mode HSL(hue, saturation, lightness)*/
+  --gradient-color-Button1: linear-gradient(
+    90deg,
+    hsl(106, 100%, 50%) 0%,
+    hsl(28, 100%, 54%, 100%)
+  );
+  --black-color-Button1: hsl(225, 15%, 6%);
+  --reflection-color-Button1: hsla(48, 30%, 95%, 0.3);
+  --body-color: hsl(0, 0%, 0%);
+
+  /*========== Font and typography ==========*/
+  /*.5rem = 8px | 1rem = 16px ...*/
+  --body-font: wush;
+  --normal-font-size: 1rem;
+}
+
+/*=============== BASE ===============*/
+
+a {
+  text-decoration: none;
+}
+
+/*=============== BUTTON ===============*/
+#Button1 {
+  margin-inline: 1.5rem;
+  display: grid;
+  place-items: center;
+}
+
+#Button1 .button {
+  position: relative;
+  transition: transform 0.4s;
+}
+
+#Button1 .button__content {
+  position: relative;
+  background: var(--gradient-color-Button1);
+  padding: 1.25rem 3rem;
+  border-radius: 4rem;
+  border: 3px solid var(--black-color-Button1);
+  color: var(--black-color-Button1);
+  display: flex;
+  align-items: center;
+  column-gap: 0.5rem;
+  overflow: hidden;
+}
+
+#Button1 .button__text {
+  font-weight: 700;
+}
+
+#Button1 .button__icon {
+  font-size: 1.5rem;
+}
+
+#Button1 .button__text,
+#Button1 .button__icon {
+  position: relative;
+  z-index: 2;
+}
+
+/* Reflection shapes */
+.button__reflection-1,
+.button__reflection-2 {
+  width: 8px;
+  height: 120px;
+  background-color: var(--reflection-color-Button1);
+  rotate: 30deg;
+  position: absolute;
+  inset: 0;
+  top: 0;
+  left: -180%;
+  margin: auto;
+  transition: left 0.6s cubic-bezier(0.2, 0.5, 0.2, 1.2);
+}
+
+#Button1 .button__reflection-1::after {
+  content: "";
+  width: 26px;
+  height: 100%;
+  background-color: var(--reflection-color-Button1);
+  position: absolute;
+  top: -1rem;
+  left: 1.25rem;
+}
+
+#Button1 .button__reflection-2::after {
+  content: "";
+  width: 40px;
+  height: 100%;
+  background-color: var(--reflection-color-Button1);
+  position: absolute;
+  top: -1rem;
+  left: 0.8rem;
+}
+
+/* Moving geometric shapes */
+#Button1 .button img {
+  position: absolute;
+  opacity: 0;
+  transition: transform 0.5s, opacity 0.5s;
+  filter: invert(100%);
+}
+
+#Button1 .button__star-1 {
+  width: 20px;
+  top: -14px;
+  left: -16px;
+  transform: rotate(48deg) scale(0.1);
+}
+
+#Button1 .button__star-2 {
+  width: 40px;
+  right: -10px;
+  top: -4px;
+  transform: rotate(-48deg) scale(0.1);
+}
+
+#Button1 .button__circle-1,
+#Button1 .button__circle-2 {
+  width: 8px;
+}
+
+#Button1 .button__circle-1 {
+  top: -8px;
+  left: 58px;
+  transform: scale(0.1);
+}
+
+#Button1 .button__circle-2 {
+  right: 34px;
+  bottom: -8px;
+  transform: scale(0.1);
+}
+
+#Button1 .button__diamond {
+  width: 18px;
+  top: -18px;
+  right: 62px;
+  transform: scale(0.1);
+}
+
+#Button1 .button__triangle {
+  width: 30px;
+  left: 15px;
+  bottom: -16px;
+  transform: rotate(-48deg) scale(0.1);
+}
+
+/* Gradient shadow */
+#Button1 .button__shadow {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background: var(--gradient-color-Button1);
+  padding: 1.25rem 3rem;
+  border-radius: 4rem;
+  border: 3px solid var(--black-color-Button1);
+  z-index: -1;
+  transition: transform 0.3s;
+}
+
+/* View shadow gradient */
+#Button1 .button:hover .button__shadow {
+  transform: translate(-0.5rem, 0.5rem);
+}
+
+/* Move reflection */
+#Button1 .button:hover .button__reflection-1 {
+  left: 120%;
+}
+
+#Button1 .button:hover .button__reflection-2 {
+  left: -70%;
+}
+
+/* View geometric shapes */
+#Button1 .button:hover {
+  transform: rotate(-4deg) scale(1.1);
+}
+
+#Button1 .button:hover img {
+  opacity: 1;
+}
+
+#Button1 .button:hover .button__star-1 {
+  transform: scale(1.1);
+  transition-delay: 0.1s;
+}
+
+#Button1 .button:hover .button__star-2 {
+  transform: scale(1.1);
+}
+
+#Button1 .button:hover .button__circle-1 {
+  transform: translateY(-8px) scale(1.1);
+  transition-delay: 0.1s;
+}
+
+#Button1 .button:hover .button__circle-2 {
+  transform: translate(-20px, 20px) scale(1.1);
+}
+
+#Button1 .button:hover .button__diamond {
+  transform: translateY(7px) rotate(-24deg) scale(1.1);
+}
+
+#Button1 .button:hover .button__triangle {
+  transform: rotate(-12deg) scale(1.1);
+}

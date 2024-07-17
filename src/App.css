@@ -1,0 +1,46 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-weight: 400;
+  font-family: bandico;
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+  background: #000000;
+}
+
+/* Width of the scrollbar */
+::-webkit-scrollbar {
+  display: none;
+  width: 5px; /* or your desired width */
+}
+
+/* Track (background) of the scrollbar */
+::-webkit-scrollbar-track {
+  background: #000000; /* red background for the track */
+}
+
+/* Thumb (draggable part) of the scrollbar */
+::-webkit-scrollbar-thumb {
+  background: #51ff00;
+  border-radius: 6px;
+}
+
+/* Optional: style the scrollbar thumb on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #71ff54;
+}
+
+#main {
+  width: 100%;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+body::-webkit-scrollbar {
+  display: block;
+  width: 5px; /* or your desired width */
+}

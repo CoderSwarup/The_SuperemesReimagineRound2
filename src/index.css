@@ -1,0 +1,14 @@
+/* All Fonts face */
+@font-face {
+  font-family: bandico;
+  src: url(./fonts/BANDICO.ttf);
+}
+
+@font-face {
+  font-family: bandicoLight;
+  src: url(./fonts/BANDICO-Light.ttf);
+}
+@font-face {
+  font-family: wush;
+  src: url(./fonts/WUSH.otf);
+}
